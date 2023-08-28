@@ -1,5 +1,6 @@
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/SpringappApplication.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/ProductController.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/InMemoryProductRepository.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Product.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/ProductRepository.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\repository\InMemoryProductRepository.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\service\ProductService.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\controller\ProductController.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\model\Product.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\repository\ProductRepository.java
+E:\Neo\response code\product collection\springapp\src\main\java\com\example\springapp\SpringappApplication.java
