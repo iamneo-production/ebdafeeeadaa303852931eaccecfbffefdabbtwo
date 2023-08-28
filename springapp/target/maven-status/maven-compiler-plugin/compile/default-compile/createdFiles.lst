@@ -1,0 +1,4 @@
+com/example/springapp/SpringappApplication.class
+com/example/springapp/repository/ProductRepository.class
+com/example/springapp/model/Product.class
+com/example/springapp/repository/InMemoryProductRepository.class
