@@ -1,17 +1,16 @@
-// InMemoryProductRepository.java
 package com.example.springapp.repository;
 
 import com.example.springapp.model.Product;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 @Repository
-public class InMemoryProductRepository implements ProductRepository {
+public class ProductRepoImpl implements ProductRepo {
+
     private final Map<Long, Product> products = new HashMap<>();
     private long idCounter = 1L;
 
@@ -22,15 +21,16 @@ public class InMemoryProductRepository implements ProductRepository {
 
     @Override
     public Product save(Product product) {
-        if (product.getId() == null) {
-            product.setId(idCounter++);
-        }
-        products.put(product.getId(), product);
+        product.setId(idCounter);
+        products.put(idCounter, product);
+        idCounter++;
         return product;
     }
 
+    
+
     @Override
     public List<Product> findAll() {
-        return new ArrayList<>(products.values());
+        return List.copyOf(products.values());
     }
 }

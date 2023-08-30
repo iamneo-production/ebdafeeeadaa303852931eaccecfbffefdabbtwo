@@ -1,10 +1,19 @@
-// Product.java
 package com.example.springapp.model;
 
+
+
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
+
 public class Product {
-    
+    @Id
     private Long id;
     private String name;
+    private String description;
     private double price;
     private int quantity;
 
@@ -12,8 +21,10 @@ public class Product {
         // Default constructor without arguments
     }
 
-    public Product(String name, double price, int quantity) {
+    public Product(Long id, String name, String description, double price, int quantity) {
+        this.id = id;
         this.name = name;
+        this.description = description;
         this.price = price;
         this.quantity = quantity;
     }
@@ -52,5 +63,23 @@ public class Product {
         this.quantity = quantity;
     }
 
-    // You can override the toString() method here if you want for logging/debugging purposes.
+    // toString method (optional, for logging/debugging)
+    // @Override
+    // public String toString() {
+    //     return "Product{" +
+    //             "id=" + id +
+    //             ", name='" + name + '\'' +
+    //             ", price=" + price +
+    //             ", quantity=" + quantity +
+    //             ", description=" + description +
+    //             '}';
+    // }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
